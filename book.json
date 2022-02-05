@@ -1,0 +1,13 @@
+{
+  "title": "WPO Cases",
+  "description" : "网站性能优化案例集",
+  "author": "王顶",
+  "language": "zh-hans",
+  "plugins": [
+    "-lunr",
+    "-search",
+    "-highlight",
+    "-sharing",
+    "-liveload"
+  ]
+}

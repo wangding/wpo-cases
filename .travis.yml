@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "10"
+
+after_script:
+  - gitbook build
+  - grunt minify
+  - grunt upload
+
+branches:
+  only:
+    - master
