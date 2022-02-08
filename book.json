@@ -8,6 +8,13 @@
     "-search",
     "-highlight",
     "-sharing",
-    "-liveload"
-  ]
+    "-liveload",
+    "anchor-navigation-ex",
+    "expandable-chapters-small"
+  ],
+  "pluginsConfig": {
+    "anchor-navigation-ex": {
+      "multipleH1": false
+    }
+  }
 }
