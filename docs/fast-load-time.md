@@ -1,26 +1,26 @@
-# 性能
+# 快速加载
 
 ## 概述
 
-在构建现代网络体验时，如果您希望持续获得快速的体验，那么对网站性能进行测量、优化和监控就显得至关重要。性能对于任何线上项目的成功都起着重要作用，因为高性能网站比性能欠佳的网站更能吸引和留住用户。网站应该专注于优化以用户为中心的性能指标。Lighthouse 等工具可以突出这些指标，并帮助您采取正确的步骤来提高性能。若想“维持快速的体验”，请设置并执行性能预案来帮助您的团队在所需的限制条件内工作，从而在您的网站推出后继续提供快速的加载体验并让用户满意。
+在构建现代网络体验时，如果您希望持续获得快速的体验，那么对网站性能进行测量、优化和监控就显得至关重要。性能对于任何线上项目的成功都起着重要作用，因为高性能网站比性能欠佳的网站更能吸引和留住用户。网站应该专注于优化以用户为中心的性能指标。Lighthouse 等工具可以突显这些指标，并帮助您采取正确的步骤来提高性能。若想“维持快速的体验”，请设置并执行性能预案来帮助您的团队在有限的条件下工作，从而在您的网站推出后继续提供快速的加载体验并让用户满意。
 
 ## 介绍
 
-- [为什么速度很重要？](why-speed-matters.md)
-- [速度是什么？](what-is-speed.md)
-- [如何测量速度？](performance/how-to-measure-speed.md)
-- [如何保持快速？](performance/how-to-stay-fast.md)
-- [使用 RAIL 模型衡量性能](performance/rail.md)
+- [为什么速度很重要？](./fast-load-time/why-speed-matters.md)
+- [速度是什么？](./fast-load-time/what-is-speed.md)
+- [如何测量速度？](./fast-load-time/how-to-measure-speed.md)
+- [如何保持快速？](./fast-load-time/how-to-stay-fast.md)
+- [使用 RAIL 模型衡量性能](./fast-load-time/rail.md)
 
 ## 设置性能预案
 
-- [Performance budgets 101]()
-- [Your first performance budget]()
-- [Incorporate performance budgets into your build process]()
-- [使用 Lighthouse 进行性能预算]()
-- [Using bundlesize with Travis CI]()
-- [Using Lighthouse Bot to set a performance budget]()
-- [Performance monitoring with Lighthouse CI]()
+- [Performance budgets 101](./fast-load-time/performance-budgets-101.md)
+- [Your first performance budget](./fast-load-time/your-first-performance-budget.md)
+- [Incorporate performance budgets into your build process](./fast-load-time/incorporate-performance-budgets-into-your-build-tools.md)
+- [使用 Lighthouse 进行性能预算](./fast-load-time/use-lighthouse-for-performance-budgets.md)
+- [Using bundlesize with Travis CI](./fast-load-time/using-bundlesize-with-travis-ci.md)
+- [Using Lighthouse Bot to set a performance budget](./fast-load-time/using-lighthouse-bot-to-set-a-performance-budget.md)
+- [Performance monitoring with Lighthouse CI](./fast-load-time/lighthouse-ci.md)
 
 ## 优化图片
 
