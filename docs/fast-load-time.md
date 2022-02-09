@@ -2,7 +2,7 @@
 
 ## 概述
 
-在构建现代网络体验时，如果您希望持续获得快速的体验，那么对网站性能进行测量、优化和监控就显得至关重要。性能对于任何线上项目的成功都起着重要作用，因为高性能网站比性能欠佳的网站更能吸引和留住用户。网站应该专注于优化以用户为中心的性能指标。Lighthouse 等工具可以突显这些指标，并帮助您采取正确的步骤来提高性能。若想“维持快速的体验”，请设置并执行性能预案来帮助您的团队在有限的条件下工作，从而在您的网站推出后继续提供快速的加载体验并让用户满意。
+在构建现代网络体验时，如果您希望持续获得快速的体验，那么对网站性能进行测量、优化和监控就显得至关重要。性能对于任何线上项目的成功都起着重要作用，因为高性能网站比性能欠佳的网站更能吸引和留住用户。网站应该专注于优化以用户为中心的性能指标。Lighthouse 等工具可以突显这些指标，并帮助您采取正确的步骤来提高性能。若想“维持快速的体验”，请制定并执行性能预算来帮助您的团队在特定的需求下工作，从而在您的网站上线后继续提供快速的加载体验并让用户满意。
 
 ## 介绍
 
@@ -12,9 +12,9 @@
 - [如何保持快速？](./fast-load-time/how-to-stay-fast.md)
 - [使用 RAIL 模型衡量性能](./fast-load-time/rail.md)
 
-## 设置性能预案
+## 制定性能预算
 
-- [Performance budgets 101](./fast-load-time/performance-budgets-101.md)
+- [性能预算基础](./fast-load-time/performance-budgets-101.md)
 - [Your first performance budget](./fast-load-time/your-first-performance-budget.md)
 - [Incorporate performance budgets into your build process](./fast-load-time/incorporate-performance-budgets-into-your-build-tools.md)
 - [使用 Lighthouse 进行性能预算](./fast-load-time/use-lighthouse-for-performance-budgets.md)
@@ -26,17 +26,17 @@
 
 - [Choose the right image format]()
 - [Choose the correct level of compression]()
-- [使用 Imagemin 压缩图像]()
+- [使用 Imagemin 压缩图像](./fast-load-time/use-imagemin-to-compress-images.md)
 - [Replace animated GIFs with video for faster page loads]()
-- [提供响应式图像]()
+- [提供响应式图像](./fast-load-time/serve-responsive-images.md)
 - [Serve images with correct dimensions]()
-- [使用 WebP 图像]()
-- [使用图像 CDN 优化图像]()
+- [使用 WebP 图像](./fast-load-time/serve-images-webp.md)
+- [使用图像 CDN 优化图像](./fast-load-time/image-cdns.md)
 
 ## 延迟加载图片和视频
 
-- [使用延迟加载提高加载速度]()
-- [延迟加载图像]()
+- [使用延迟加载提高加载速度](./fast-load-time/lazy-loading.md)
+- [延迟加载图像](./fast-load-time/lazy-loading-images.md)
 - [延迟加载视频]()
 - [Browser-level image lazy-loading for the web]()
 - [使用 lazysizes 延迟加载图像]()
