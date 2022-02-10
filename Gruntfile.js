@@ -12,24 +12,6 @@ module.exports = function (grunt) {
         dest: 'dist/'
       }
     },
-    cssmin: {
-      files: {
-        expand: true,
-        cwd: '_book',
-        src: ['gitbook/**/*.css'],
-        dest: 'dist/'
-      }
-    },
-    uglify: {
-      main: {
-        files: [{
-          expand: true,
-          cwd: '_book',
-          src: ['gitbook/**/*.js', '!gitbook/gitbook-plugin-anchor-navigation-ex/**/*.js'],
-          dest: 'dist/'
-        }]
-      }
-    },
     unescape: {
       files: {
         src: ['_book/*.html', '_book/docs/*.html'],
@@ -58,16 +40,6 @@ module.exports = function (grunt) {
         }]
       }
     },
-    qiniu_qupload: {
-      default_options: {
-        options: {
-          ak: 'QINIU_AK',
-          sk: 'QINIU_SK',
-          bucket: 'wpo-cases',
-          assets: [{src: '_book', prefix: ''}]
-        }
-      }
-    },
     copy: {
       html: {
         files: [{
@@ -94,14 +66,10 @@ module.exports = function (grunt) {
   });
 
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-text-replace');
   grunt.loadNpmTasks('grunt-unescape-html');
   grunt.loadNpmTasks('grunt-json-minify');
-  grunt.loadNpmTasks('@wangding/grunt-qiniu-qupload');
 
-  grunt.registerTask('minify', ['unescape', 'copy:html', 'htmlmin', 'replace', 'cssmin', 'uglify', 'copy:html', 'copy:js', 'json-minify']);
-  grunt.registerTask('upload', ['qiniu_qupload']);
+  grunt.registerTask('minify', ['unescape', 'copy:html', 'htmlmin', 'replace', 'copy:html', 'json-minify']);
 };

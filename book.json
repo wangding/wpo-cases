@@ -10,11 +10,15 @@
     "-sharing",
     "-liveload",
     "anchor-navigation-ex",
+    "image-captions-extended",
     "expandable-chapters-small"
   ],
   "pluginsConfig": {
     "anchor-navigation-ex": {
       "multipleH1": false
+    },
+    "image-captions": {
+      "caption": "图：_CAPTION_"
     }
   }
 }
