@@ -10,6 +10,10 @@
 ## 技术资料
 
 - [掘金前端性能文集](docs/juejin-wpo.md)
+  - [现代浏览器内部揭秘：第一部分](docs/juejin-wpo/inside-look-at-modern-web-browser-part1.md)
+  - [现代浏览器内部揭秘：第二部分](docs/juejin-wpo/inside-browser-part2.md)
+  - [现代浏览器内部揭秘：第三部分](docs/juejin-wpo/inside-browser-part3.md)
+  - [现代浏览器内部揭秘：第四部分](docs/juejin-wpo/inside-browser-part4.md)
   - [2018 前端性能优化清单 — 第 1 部分](docs/juejin-wpo/front-end-performance-checklist-2018-1.md)
   - [2018 前端性能优化清单 — 第 2 部分](docs/juejin-wpo/front-end-performance-checklist-2018-2.md)
   - [2018 前端性能优化清单 — 第 3 部分](docs/juejin-wpo/front-end-performance-checklist-2018-3.md)
