@@ -126,7 +126,7 @@ FID (First Input Delay) 测量交互性。为了提供良好的用户体验，�
 
 ### FPS
 
-FPS (Frames per Second) 
+FPS (Frames per Second)
 
 ## 性能优化手段
 
