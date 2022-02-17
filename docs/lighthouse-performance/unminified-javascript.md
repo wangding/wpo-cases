@@ -1,14 +1,12 @@
-# Minify JavaScript
+# 压缩 JavaScript
 
-Minifying JavaScript files can reduce payload sizes and script parse time. The Opportunities section of your Lighthouse report lists all unminified JavaScript files, along with the potential savings in kibibytes (KiB) when these files are minified:
+压缩 JavaScript 文件可以减少有效负载大小和脚本解析时间。Lighthouse 报告的“机会”部分列出了所有未压缩的 JavaScript 文件，以及缩小这些文件后可能节省的千字节 (KiB) ：
 
-A screenshot of the Lighthouse Minify JavaScript audit
+![Lighthouse 审核 Javascript 是否压缩的截图](./img/unminified-javascript-1.png)
 
-![img1](./img/unminified-javascript-1.png)
+## 如何压缩 JavaScript 文件
 
-## How to minify your JavaScript files
-
-Minification is the process of removing whitespace and any code that is not necessary to create a smaller but perfectly valid code file. Terser is a popular JavaScript compression tool. webpack v4 includes a plugin for this library by default to create minified build files.
+压缩是删除空格和任何无用代码的过程，用来创建一个更小的完全有效的代码文件。Terser 是一种流行的 JavaScript 压缩工具。webpack v4 默认包含这个库的插件来创建压缩的 Javascript 文件。
 
 ## Stack-specific guidance
 
@@ -34,6 +32,6 @@ If your build system minifies JS files automatically, ensure that you are deploy
 
 A number of WordPress plugins can speed up your site by concatenating, minifying, and compressing your scripts. You may also want to use a build process to do this minification up front if possible.
 
-## Resources
+## 资源
 
-- [Source code for Minify JavaScript audit](https://github.com/GoogleChrome/lighthouse/blob/master/lighthouse-core/audits/byte-efficiency/unminified-javascript.js)
+- [审核 JavaScript 是否压缩的源代码](https://github.com/GoogleChrome/lighthouse/blob/master/lighthouse-core/audits/byte-efficiency/unminified-javascript.js)

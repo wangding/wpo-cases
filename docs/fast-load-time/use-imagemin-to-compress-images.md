@@ -4,14 +4,13 @@
 
 未压缩的图像会因不必要的字节使页面膨胀。右边的这张照片比左边的这张小 40%，但对于普通用户来说可能看起来一样。
 
-
-![use-imagemin-to-compress-images-1](./img/use-imagemin-to-compress-images-1.png)
+![压缩图片前后对比](./img/use-imagemin-to-compress-images-1.png)
 
 ## 措施
 
-运行 Lighthouse 以检查通过压缩图像来改善页面加载的机会。这些机会列在“有效编码图像”下：
+运行 Lighthouse 以检查通过压缩图像来改善页面加载的机会。这些机会列在“有效编码图片”下：
 
-![use-imagemin-to-compress-images-2](./img/use-imagemin-to-compress-images-2.png)
+![Lighthouse 有效编码图片](./img/use-imagemin-to-compress-images-2.png)
 
 Lighthouse 目前仅报告压缩 JPEG 格式图像的机会。
 

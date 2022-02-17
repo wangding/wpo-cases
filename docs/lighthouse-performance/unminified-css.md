@@ -1,12 +1,12 @@
-# Minify CSS
+# 压缩 CSS
 
-The Opportunities section of your Lighthouse report lists all unminified CSS files, along with the potential savings in kibibytes (KiB) when these files are minified:
-![img1](./img/unminified-css-1.png)
-A screenshot of the Lighthouse Minify CSS audit
+Lighthouse 报告的 Opportunities 部分列出了所有未压缩的 CSS 文件，以及压缩这些文件后可能节省的千字节 (KiB) ：
 
-## How minifying CSS files can improve performance
+![Lighthouse 审核 CSS 是否压缩的截图](./img/unminified-css-1.png)
 
-Minifying CSS files can improve your page load performance. CSS files are often larger than they need to be. For example:
+## 压缩 CSS 文件如何提高性能
+
+压缩 CSS 文件可以提高页面加载性能。CSS 文件通常比它们需要的大。例如：
 
 ```css
 /* Header background should match brand colors. */
@@ -18,29 +18,29 @@ h2 {
 }
 ```
 
-Can be reduced to:
+可以被简化为：
 
 ```css
 h1, h2 { background-color: #000000; }
 ```
 
-From the perspective of the browser, these 2 code samples are functionally equivalent, but the second example uses less bytes. Minifiers can further improve byte efficiency by removing whitespace:
+从浏览器的角度来看，这两个代码示例在功能上是等效的，但第二个示例使用的字节更少。压缩工具可以通过删除空格进一步提高字节效率：
 
 ```css
 h1,h2{background-color:#000000;}
 ```
 
-Some minifiers employ clever tricks to minimize bytes. For example, the color value #000000 can be further reduced to #000, which is its shorthand equivalent.
+有些压缩工具采用巧妙的技巧来最小化字节。例如，颜色值 `#000000` 可以进一步简化为 `#000`，这是它的简写等价物。
 
-Lighthouse provides an estimate of potential savings based on the comments and whitespace characters that it finds in your CSS. This is a conservative estimate. As mentioned earlier, minifiers can perform clever optimizations (such as reducing #000000 to #000) to further reduce your file size. So, if you use a minifier, you may see more savings than what Lighthouse reports.
+Lighthouse 根据它在您的 CSS 代码中找到的注释和空白字符，提供潜在节省的估计。这是一个保守的估计。如前所述，压缩工具可以执行更巧妙的优化（例如：把 `#000000` 改为 `#000`）以进一步减小文件大小。因此，如果您使用压缩工具，您可能会看到比 Lighthouse 报告的更多节省。
 
-## Use a CSS minifier to minify your CSS code
+## 使用 CSS 压缩工具来缩小你的 CSS 代码
 
-For small sites that you don't update often, you can probably use an online service for manually minifying your files. You paste your CSS into the service's UI, and it returns a minified version of the code.
+对于您不经常更新的小型网站，您可以使用在线服务来手动压缩文件。您将 CSS 粘贴到在线服务的界面中，它会返回代码的压缩版本。
 
-For professional developers, you probably want to set up an automated workflow that minifies your CSS automatically before you deploy your updated code. This is usually accomplished with a build tool like Gulp or Webpack.
+对于专业开发人员，您可能希望设置一个自动化的工作流程，在部署更新的代码之前自动压缩您的 CSS。这通常是通过像 Gulp 或 Webpack 这样的构建工具来完成的。
 
-Learn how to minify your CSS code in Minify CSS.
+在 Minify CSS 中了解如何压缩 CSS 代码。
 
 ## Stack-specific guidance
 
@@ -66,6 +66,6 @@ A number of WordPress plugins can speed up your site by concatenating, minifying
 
 ## Resource
 
-- [Source code for Minify CSS audit](https://github.com/GoogleChrome/lighthouse/blob/master/lighthouse-core/audits/byte-efficiency/unminified-css.js)
-- [Minify CSS](https://web.dev/minify-css)
-- [Minify and compress network payloads](https://web.dev/reduce-network-payloads-using-text-compression)
+- [审核 CSS 是否压缩的源代码](https://github.com/GoogleChrome/lighthouse/blob/master/lighthouse-core/audits/byte-efficiency/unminified-css.js)
+- [压缩 CSS](https://wpocs.cn/docs/fast-load-time/minify-css.html)
+- [减小和压缩网络负载](https://wpocs.cn/docs/fast-load-time/reduce-network-payloads-using-text-compression.html)
