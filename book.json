@@ -6,7 +6,7 @@
   "plugins": [
     "-lunr",
     "-search",
-    "-highlight",
+    "highlight",
     "-sharing",
     "-liveload",
     "anchor-navigation-ex",
