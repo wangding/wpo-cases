@@ -113,7 +113,7 @@
   - [快速播放音频和视频预加载](docs/fast-load-time/fast-playback-with-preload.md)
   - —— 优化 CSS ——
   - [延迟加载非关键 CSS](docs/fast-load-time/defer-non-critical-css.md)
-  - [Minify CSS](docs/fast-load-time/minify-css.md)
+  - [压缩 CSS](docs/fast-load-time/minify-css.md)
   - [提取关键 CSS (Critical CSS)](docs/fast-load-time/extract-critical-css.md)
   - [使用媒体查询优化 CSS 背景图像](docs/fast-load-time/optimize-css-background-images-with-media-queries.md)
   - —— 优化第三方资源 ——
