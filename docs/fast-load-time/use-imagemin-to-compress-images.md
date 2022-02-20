@@ -8,7 +8,7 @@
 
 ## 措施
 
-运行 Lighthouse 以检查通过压缩图像来改善页面加载的机会。这些机会列在“有效编码图片”下：
+运行 Lighthouse 以检查通过压缩图像来改善页面加载的机会。这些优化机会列在“有效编码图片”下：
 
 ![Lighthouse 有效编码图片](./img/use-imagemin-to-compress-images-2.png)
 

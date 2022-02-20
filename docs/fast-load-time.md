@@ -24,12 +24,12 @@
 
 ## 优化图片
 
-- [Choose the right image format]()
-- [Choose the correct level of compression]()
+- [选择正确的图片格式](./fast-load-time/choose-the-right-image-format.md)
+- [选择正确的压缩级别](./fast-load-time/compress-images.md)
 - [使用 Imagemin 压缩图像](./fast-load-time/use-imagemin-to-compress-images.md)
-- [Replace animated GIFs with video for faster page loads]()
+- [用视频替换 GIF 动画以加快页面加载](./fast-load-time/replace-gifs-with-videos.md)
 - [提供响应式图像](./fast-load-time/serve-responsive-images.md)
-- [Serve images with correct dimensions]()
+- [提供尺寸正确的图像](./fast-load-time/serve-images-with-correct-dimensions.md)
 - [使用 WebP 图像](./fast-load-time/serve-images-webp.md)
 - [使用图像 CDN 优化图像](./fast-load-time/image-cdns.md)
 
@@ -37,9 +37,9 @@
 
 - [使用延迟加载提高加载速度](./fast-load-time/lazy-loading.md)
 - [延迟加载图像](./fast-load-time/lazy-loading-images.md)
-- [延迟加载视频]()
-- [Browser-level image lazy-loading for the web]()
-- [使用 lazysizes 延迟加载图像]()
+- [延迟加载视频](./fast-load-time/lazy-loading-video.md)
+- [浏览器内置图像延迟加载](./fast-load-time/browser-level-image-lazy-loading.md)
+- [使用 lazysizes 延迟加载图像](./fast-load-time/use-lazysizes-to-lazyload-images.md)
 
 ## 优化 JavaScript
 
