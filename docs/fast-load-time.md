@@ -75,9 +75,9 @@
 
 ## 优化网络字体
 
-- [在字体加载期间避免不可见的文本]()
-- [优化 WebFont 加载和呈现]()
-- [减小 WebFont 大小]()
+- [在字体加载期间避免不可见的文本](fast-load-time/avoid-invisible-text.md)
+- [优化 WebFont 加载和呈现](fast-load-time/optimize-webfont-loading.md)
+- [减小 WebFont 大小](fast-load-time/reduce-webfont-size.md)
 
 ## 针对网络质量优化
 
