@@ -8,8 +8,6 @@
 
 # 性能指标都是些什么鬼?
 
-![](https://cdn-images-1.medium.com/max/1000/1*hT4ixOXHZ8KRZ3YfbpAxbg.png)
-
 测量页面的加载性能是一项艰难的任务。因此 [Google Developers](https://medium.com/@googledevs) 正和社区一起致力于建立渐进式网页指标（Progressive Web Metrics，简称 PWM’s）。
 
 PWM’s 都是些什么，我们为什么需要它们？
@@ -24,7 +22,7 @@ PWM’s 都是些什么，我们为什么需要它们？
 
 举个例子，如果我们看一下 [reddit.com 的跟踪时间轴](https://chromedevtools.github.io/timeline-viewer/?loadTimelineFromURL=drive://0ByCYpYcHF12_YjBGUTlJR2gzcHc)（Chrome 的开发者工具可以帮助我们用蓝色和红色的垂直线来标记那些点），就可以明白为什么这些指标不是那么有用了。
 
-![timeline trace of reddit.com](https://cdn-images-1.medium.com/max/1000/1*hFyHeo1-iI62aMQT8P8ORw.png)
+![timeline trace of reddit.com](./img/timeline-trace-of-reddit-com.png)
 
 > 时至今日，我们可以看到 `window.onload` 并不像以前那样能真实反映出用户的体验了。
 
@@ -42,7 +40,7 @@ PWM’s 都是些什么，我们为什么需要它们？
 
 看一下下方柱状图，其 X 轴展示了加载时长，Y 轴展示了实际加载时长在特定时间区间里的用户的相对数量，你就可以明白不是所有用户的体验到的加载时间都会小于两秒。
 
-![](https://cdn-images-1.medium.com/max/1000/1*gw7eB5MF4SDAk1TGHSUlkg.png)
+![](./img/times.png)
 
 因此在我们的试验里，17 秒左右的 `load` 事件在了解用户加载感知方面是没有什么价值的。用户在这 17 秒里到底看到了什么？白屏？加载了一半的页面？页面假死（用户无法点击输入框或滚动）？如果这些问题有答案的话：
 
@@ -80,7 +78,7 @@ PWM’s 是一组用来帮助检测性能瓶颈的指标。除开 `load` 和 `DO
 
 下面让我们用 reddit.com 的跟踪时间轴来探究一下 PWM’s，并尝试弄明白每个指标的意思。
 
-![Timeline trace of reddit.com measured using ChromeDevTools](https://cdn-images-1.medium.com/max/1000/1*-zjNpHphoKaaZJgG7omu2w.png)
+![Timeline trace of reddit.com measured using ChromeDevTools](./img/timeline-chorme-devtools.png)
 
 * * *
 
@@ -88,11 +86,11 @@ PWM’s 是一组用来帮助检测性能瓶颈的指标。除开 `load` 和 `DO
 
 我曾经说我们只有两个指标，这其实不太准确。（Chrome）开发者工具还给我们提供了一个指标 - FP。这个指标表示页面绘制的时间点，换句话说它表示当用户第一次看到白屏的时间点（下面是 msn.com 的 FP 截屏）。可以在[规范说明](https://github.com/w3c/paint-timing)里阅读更多相关内容。
 
-![First Paint of msn.com](https://cdn-images-1.medium.com/max/800/1*IuI-OeOiJByd_kbOnQ4T6A.png)
+![First Paint of msn.com](./img/fp.png)
 
 为了弄明白它是如何工作的，我们以 Chromium 中 Graphic Layer 的底层实现作为例子（译者注：关于GraphicsLayer，可以参考 [WEBKIT 渲染不可不知的这四棵树](https://juejin.im/entry/57f9eb9e0bd1d00058bc0a1b)或[无线性能优化：Composite](http://taobaofed.org/blog/2016/04/25/performance-composite/) 中相关内容）。
 
-![Simplified Chromium Graphics Layer](https://cdn-images-1.medium.com/max/800/1*w0ejDtPxaRfJsyGRgoE02A.png)
+![Simplified Chromium Graphics Layer](./img/simplified-layer.png)
 
 FP 事件在 Graphic Layer 进行绘制的时候触发，而不是文本、图片或 Canvas 绘制的时候，但它也给出了一些开发者尝试使用的信息。
 
@@ -114,7 +112,7 @@ FP 事件在 Graphic Layer 进行绘制的时候触发，而不是文本、图�
 
 因此，用户可能会产生疑问，**它正在运行吗？** 页面是否在他（她）键入 URL 并按 enter 键后开始加载了呢？
 
-![First Paint vs First Contentful Paint of msn.com](https://cdn-images-1.medium.com/max/800/1*UduDmCWTDefC6CHubA-lTQ.png)
+![First Paint vs First Contentful Paint of msn.com](./img/fp-fcp.png)
 
 继续看一下 Chromium，FCP 事件在文本（正在等待字体文件加载的文本不计算在内）、图片、Canvas 等元素绘制时被触发。结果表明，FP 和 FCP 的时间差异可能从几毫秒到几秒不等。这个差别甚至可以从上面的图片中看出来。这就是为什么用一个指标来表示真实的首次内容绘制是有价值的。
 
@@ -135,7 +133,7 @@ FP 事件在 Graphic Layer 进行绘制的时候触发，而不是文本、图�
 
 这是指页面主要内容出现在屏幕上的时间点，因此——**它有用吗？**
 
-![First Paint vs First Contentful Paint vs First Meaningful Paint of msn.com](https://cdn-images-1.medium.com/max/800/1*835Kq5Mzw87L8XRoXXyKIw.png)
+![First Paint vs First Contentful Paint vs First Meaningful Paint of msn.com](./img/fp-fcp-fmp.png)
 
 主要内容是什么？
 
@@ -200,7 +198,7 @@ FP 事件在 Graphic Layer 进行绘制的时候触发，而不是文本、图�
 
 长任务 API 已经在 Chrome 里[实现](https://www.chromestatus.com/feature/5738471184400384)，并用作测量主线程的繁忙程度。
 
-![](https://cdn-images-1.medium.com/max/1000/1*JUlxNXlme70nrChpYw6idQ.png)
+![](./img/long-task.png)
 
 回到预计输入延迟，用户会假设页面响应很快，但如果主线程正忙于处理各个长任务，那么就会让用户不满意。对于应用来说，用户体验至关重要，可以从 [Measure Performance with the RAIL Model](https://developers.google.com/web/fundamentals/performance/rail) 这篇文章里阅读关于这种类型的性能瓶颈如何进行性能提升。
 
@@ -227,13 +225,13 @@ FP 事件在 Graphic Layer 进行绘制的时候触发，而不是文本、图�
 
 **TTCI**
 
-![](https://cdn-images-1.medium.com/max/800/0*6qzJAADPmBaNSwFw.)
+![](./img/ttci.png)
 
 使用逆序分析，从追踪线的尾端开始看，发现页面加载活动保持了 5 秒的安静并且再无更多的长任务执行，得到了一段叫做**安静窗口**的时期。安静窗口之后的第一个长任务（从结束时间向前开始算）之前的时间点就是 **TTCI**（译者注：这里是将整个时间线反转过来看的，实际表示的是安静窗口前，最接近安静窗口的长任务的结束时间）。
 
 **TTFI**
 
-![](https://cdn-images-1.medium.com/max/800/0*xWGGBiXh0pLiPeuk.)
+![](./img/ttfi.png)
 
 这个指标的定义和 TTCI 有一点不同。我们从头至尾来分析跟踪时间轴。在 FMP 发生后有一个 3 秒的安静窗口。这个时间已经足够说明页面对于用户来说是可交互的。但可能会有**独立任务**在这个安静窗口期间或之后开始执行，它们可以被忽略。
 
@@ -249,7 +247,7 @@ FP 事件在 Graphic Layer 进行绘制的时候触发，而不是文本、图�
 
 当线程在**视觉上准备好**和**首次可交互**之间忙碌了很长时间的时候
 
-![](https://cdn-images-1.medium.com/max/800/1*_uAiHAv4-bpoMFYqgbBKcQ.png)
+![](./img/ttfi-ttci.png)
 
 这是其中一个最复杂的瓶颈，并且没有标准方法来修复这类型的问题。它是独立的，而且取决于应用的特定情况。[Chrome 开发者工具](https://developer.chrome.com/devtools)有一系列[文章](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/)帮助我们检测运行时的性能问题。
 

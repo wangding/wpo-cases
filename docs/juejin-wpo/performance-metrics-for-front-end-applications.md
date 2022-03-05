@@ -7,8 +7,6 @@
 
 # 前端应用的性能指标
 
-![](https://cdn-images-1.medium.com/max/2560/1*V7jvAKZ4UKLwQ3ET2r9CuQ.jpeg)
-
 网络已经成为我们日常生活中不可或缺的一部分。根据 [CreditLoan](https://www.creditloan.com/blog/how-the-world-spends-its-time-online/) 调查显示，用户平均每天花费 7.6 小时上网，其中 20% 的时间用来网上冲浪。你可以想象一下，在 2020 年这个充满灾难的一年，当每个人都呆在家里的时候，上网的小时数应该有多大。
 
 这些数字体现了网络对我们有多么重大的影响。为了充分利用这个大的机会，网站应该有非常高的标准。构建一个好看的网站是容易的，但是要获得出色的性能是非常困难的。这是因为 Web 开发中存在许多瓶颈，像：昂贵的 JavaScript 开销、网络字体加载缓慢、大型的图片下载缓慢等。
@@ -137,7 +135,7 @@ CLS 检查网站元素的不稳定程度。它突出了用户多久遇到意外�
 
 让我们看一下意外的布局偏移如何对用户体验产生负面影响。
 
-![Source: [Web.dev](https://web.dev/cls/)](https://cdn-images-1.medium.com/max/2632/1*lbPHYbFOBwMs7yN4hcmjeA.gif)
+![Source: https://web.dev/cls/](./img/cls.gif)
 
 ### 速度指数
 
