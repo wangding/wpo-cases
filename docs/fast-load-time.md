@@ -43,13 +43,16 @@
 
 ## 优化 JavaScript
 
-- [使用 PRPL 模式实现即时加载]()
-- [通过代码拆分减少 JavaScript 负载]()
-- [删除未使用的代码]()
-- [缩小和压缩网络有效负载]()
-- [Serve modern code to modern browsers for faster page loads]()
-- [发布、传输和安装现代 JavaScript 以实现更快的应用程序]()
-- [CommonJS 如何让您的捆绑包变得更大]()
+- [使用 PRPL 模式实现即时加载](./fast-load-time/apply-instant-loadi
+ng-with-prpl.md)
+- [通过代码拆分减少 JavaScript 负载](./fast-load-time/reduce-javasc
+ript-payloads-with-code-splitting.md)
+- [删除未使用的代码](./fast-load-time/remove-unused-code.md)
+- [缩小和压缩网络有效负载](./fast-load-time/reduce-network-payloads
+-using-text-compression.md)
+- [为现代浏览器提供现代代码以加快页面加载速度](./fast-load-time/serve-modern-code-to-modern-browsers.md)
+- [发布、传输和安装现代 JavaScript 以实现更快的应用程序](./fast-load-time/publish-modern-javascript.md)
+- [CommonJS 如何让您的捆绑包变得更大](./fast-load-time/commonjs-larger-bundles.md)
 
 ## 优化资源交付
 
@@ -69,9 +72,9 @@
 
 ## 优化第三方资源
 
-- [Third-party JavaScript performance]()
-- [Identify slow third-party JavaScript]()
-- [高效加载第三方 JavaScript]()
+- [第三方 JavaScript 性能](./fast-load-time/third-party-javascript.md)
+- [识别慢速第三方 JavaScript](./fast-load-time/identify-slow-third-party-javascript.md)
+- [高效加载第三方 JavaScript](./fast-load-time/efficiently-load-third-party-javascript.md)
 
 ## 优化网络字体
 

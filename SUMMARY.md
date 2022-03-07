@@ -101,7 +101,7 @@
   - [通过代码拆分减少 JavaScript 负载](docs/fast-load-time/reduce-javascript-payloads-with-code-splitting.md)
   - [删除未使用的代码](docs/fast-load-time/remove-unused-code.md)
   - [缩小和压缩网络有效负载](docs/fast-load-time/reduce-network-payloads-using-text-compression.md)
-  - [Serve modern code to modern browsers for faster page loads](docs/fast-load-time/serve-modern-code-to-modern-browsers.md)
+  - [为现代浏览器提供现代代码以加快页面加载速度](docs/fast-load-time/serve-modern-code-to-modern-browsers.md)
   - [发布、传输和安装现代 JavaScript 以实现更快的应用程序](docs/fast-load-time/publish-modern-javascript.md)
   - [CommonJS 如何让您的捆绑包变得更大](docs/fast-load-time/commonjs-larger-bundles.md)
   - —— 优化资源交付 ——
@@ -117,8 +117,8 @@
   - [提取关键 CSS (Critical CSS)](docs/fast-load-time/extract-critical-css.md)
   - [使用媒体查询优化 CSS 背景图像](docs/fast-load-time/optimize-css-background-images-with-media-queries.md)
   - —— 优化第三方资源 ——
-  - [Third-party JavaScript performance](docs/fast-load-time/third-party-javascript.md)
-  - [Identify slow third-party JavaScript](docs/fast-load-time/identify-slow-third-party-javascript.md)
+  - [第三方 JavaScript 性能](docs/fast-load-time/third-party-javascript.md)
+  - [识别慢速第三方 JavaScript](docs/fast-load-time/identify-slow-third-party-javascript.md)
   - [高效加载第三方 JavaScript](docs/fast-load-time/efficiently-load-third-party-javascript.md)
   - —— 优化网络字体 ——
   - [在字体加载期间避免不可见的文本](docs/fast-load-time/avoid-invisible-text.md)
