@@ -56,12 +56,12 @@ ript-payloads-with-code-splitting.md)
 
 ## 优化资源交付
 
-- [Content delivery networks (CDNs)]()
-- [Prioritize resources]()
-- [预加载关键资产以提高加载速度]()
-- [Establish network connections early to improve perceived page speed]()
-- [Prefetch resources to speed up future navigations]()
-- [快速播放音频和视频预加载]()
+- [内容分发网络 (CDNs)](./fast-load-time/content-delivery-networks.md)
+- [Prioritize resources](./fast-load-time/prioritize-resources.md)
+- [预加载关键资产以提高加载速度](./fast-load-time/preload-critical-assets.md)
+- [Establish network connections early to improve perceived page speed](./fast-load-time/preconnect-and-dns-prefetch.md)
+- [Prefetch resources to speed up future navigations](./fast-load-time/link-prefetch.md)
+- [快速播放音频和视频预加载](./fast-load-time/fast-playback-with-preload.md)
 
 ## 优化 CSS
 

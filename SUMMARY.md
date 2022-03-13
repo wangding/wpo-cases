@@ -105,7 +105,7 @@
   - [发布、传输和安装现代 JavaScript 以实现更快的应用程序](docs/fast-load-time/publish-modern-javascript.md)
   - [CommonJS 如何让您的捆绑包变得更大](docs/fast-load-time/commonjs-larger-bundles.md)
   - —— 优化资源交付 ——
-  - [Content delivery networks (CDNs)](docs/fast-load-time/content-delivery-networks.md)
+  - [内容分发网络 (CDNs)](docs/fast-load-time/content-delivery-networks.md)
   - [Prioritize resources](docs/fast-load-time/prioritize-resources.md)
   - [预加载关键资产以提高加载速度](docs/fast-load-time/preload-critical-assets.md)
   - [Establish network connections early to improve perceived page speed](docs/fast-load-time/preconnect-and-dns-prefetch.md)
